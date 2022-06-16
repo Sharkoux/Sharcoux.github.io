@@ -1,0 +1,144 @@
+
+/* Nav Iphone */
+
+nav {
+
+margin: 15px;
+align-items: center;
+
+}
+
+
+
+nav #text {
+    display: none;
+}
+
+nav ul {
+    padding-left: 30px;
+}
+
+
+nav #Mini-Recherche{
+    display: block;
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    font-weight: bold;
+    color: white;
+    border-radius:13px 13px 13px 13px;
+    padding: 19px;
+}
+
+
+
+nav .i2 {
+    margin-right: auto;
+}
+
+
+/* Main iphone */
+
+.main1 {
+width: 110%;
+}
+
+.section2 {
+border-radius: 0%;
+width: 100%;
+margin-right: 5px;
+margin-left: 5px;
+padding: 5px;
+}
+
+
+.titre2 {
+padding-left: 5%;
+text-align: center;
+justify-content: space-between;
+
+}
+
+.titre3 {
+    text-align: center;
+    padding-left: 0%;
+}
+
+#section1 {
+    background-color: white;
+    border: none;
+}
+
+.ligne1,
+.ligne2 {
+    flex-direction: column;
+}
+
+.card{
+    margin: 20px;
+    width: 92%;
+}
+
+.card2 {
+    
+    width: 92%;
+    margin: 20px;
+}
+
+
+.card2:hover {
+    width: 90%;
+    height: 240px;
+    align-items: center;
+    box-shadow: 10px 10px 10px #DEEBFF ;
+}
+
+.Plus {
+text-align: left;
+
+}
+
+/* Section 3 "Activité à Marseille */
+#section3 {
+    height: auto;
+    width: 110%;
+   
+}
+
+.section3bis{
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+.card-large {
+    width: 75%;
+   
+}
+
+.image-large {
+    height: 190px;
+}
+
+.two-card {
+    width: 75%;
+    
+}
+
+.little-card1,
+.little-card2 {
+    height: 200px;
+
+}
+
+
+
+footer {
+    width: 110%;
+    flex-direction: column;
+    
+}
+
+footer ul {
+    margin-left: 3%;
+}
