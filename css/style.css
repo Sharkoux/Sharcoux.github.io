@@ -115,10 +115,7 @@ border-radius:0 25px 25px 0;
 padding: 20px;
 }
 
-nav #text:hover {
-    background-color: #DEEBFF;
-    color: #0065FC;
-}
+
 /* Nav Filter */
 nav #filter1 {
     display: flex;
@@ -407,8 +404,8 @@ margin-top: -4%;
 }
 
 .card2:hover {
-    width: 75%;
-    height: 32%;
+    width: 80%;
+    height: 30%;
     font-size: x-large;
     font-weight: bold;
     align-items: center;
