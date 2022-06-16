@@ -1,12 +1,14 @@
 
-
 /* Nav Iphone */
 
 nav {
-width: 100%;
-text-align: center;
 
+margin: 15px;
+align-items: center;
+padding-left: 2%;
 }
+
+
 
 nav #text {
     display: none;
@@ -46,7 +48,7 @@ align-items: center;
 
 .section2 {
 border-radius: 0%;
-width: 90%;
+width: 100%;
 margin-right: 5px;
 margin-left: 5px;
 padding: 5px;
@@ -106,7 +108,7 @@ text-align: left;
 /* Section 3 "Activité à Marseille */
 #section3 {
     height: auto;
-    width: 95%;
+    width: 110%;
    
 }
 
