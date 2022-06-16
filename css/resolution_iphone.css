@@ -5,7 +5,7 @@ nav {
 
 margin: 15px;
 align-items: center;
-padding-left: 2%;
+
 }
 
 
@@ -14,7 +14,9 @@ nav #text {
     display: none;
 }
 
-
+nav ul {
+    padding-left: 30px;
+}
 
 
 nav #Mini-Recherche{
@@ -41,7 +43,7 @@ nav .i2 {
 /* Main iphone */
 
 .main1 {
-width: 100%;
+width: 110%;
 align-items: center;
 
 }
@@ -144,7 +146,7 @@ text-align: left;
 footer {
     width: 100%;
     flex-direction: column;
-    padding: 3%;
+    
 }
 
 footer ul {
