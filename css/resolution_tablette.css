@@ -30,18 +30,6 @@ header .a:hover {
 
 /* Nav tablette*/
 
-nav #filter1 {
-   flex-direction: column;
-}
-
-nav form {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-
-}
-
 nav {
 
     width: auto;
@@ -49,6 +37,19 @@ nav {
    
     
 }
+
+nav #filter1 {
+   flex-direction: column;
+}
+
+nav form {
+    width: auto;
+    justify-content: center;
+    margin-left: auto;
+
+}
+
+
 
 
 
@@ -59,10 +60,6 @@ nav ul {
     
 }
 
-nav #p1 {
-    justify-content: center;
-    text-align: center;
-}
 
 nav li {
    
@@ -137,7 +134,7 @@ nav #Noborder {
 /* Section 3 Tablette */
 
 .two-card { 
-    margin-left:0px;
+    margin-left:0%;
     width: 25%;
 
 }

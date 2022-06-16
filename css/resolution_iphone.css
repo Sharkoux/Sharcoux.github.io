@@ -29,11 +29,7 @@ nav #Mini-Recherche{
     padding: 19px;
 }
 
-nav #info {
-    
-    margin-top: auto;
-    
-}
+
 
 nav .i2 {
     margin-right: auto;
@@ -44,8 +40,6 @@ nav .i2 {
 
 .main1 {
 width: 110%;
-align-items: center;
-
 }
 
 .section2 {
@@ -70,8 +64,6 @@ justify-content: space-between;
 }
 
 #section1 {
-  
-    width: 90%;
     background-color: white;
     border: none;
 }
@@ -96,8 +88,6 @@ justify-content: space-between;
 .card2:hover {
     width: 90%;
     height: 240px;
-    font-size: x-large;
-    font-weight: bold;
     align-items: center;
     box-shadow: 10px 10px 10px #DEEBFF ;
 }
@@ -132,7 +122,7 @@ text-align: left;
 
 .two-card {
     width: 75%;
-    margin-left: 0%;
+    
 }
 
 .little-card1,
