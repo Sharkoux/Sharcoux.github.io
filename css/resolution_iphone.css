@@ -1,22 +1,46 @@
+header {
+    flex-direction: column;
+    border-bottom: 3px solid rgb(242, 242, 242);
+}
+
+
+header .a:hover {
+    color: #0065FC;
+    border-bottom: 3px solid #0065FC;
+    padding-bottom: 10px;
+    border-top: none;
+}   
+
+
+
+header ul{
+width: 100%;
+justify-content: space-around;
+}
+
+
 
 /* Nav Iphone */
 
 nav {
-
-margin: 15px;
+width: 90%;
 align-items: center;
 
 }
 
 
 
+nav #filters {
+    padding-left: 0px;
+    line-height: 10%;
+    white-space: nowrap;
+}
+
 nav #text {
     display: none;
 }
 
-nav ul {
-    padding-left: 30px;
-}
+
 
 
 nav #Mini-Recherche{
@@ -39,7 +63,7 @@ nav .i2 {
 /* Main iphone */
 
 .main1 {
-width: 110%;
+width: 100%;
 }
 
 .section2 {
@@ -100,7 +124,7 @@ text-align: left;
 /* Section 3 "Activité à Marseille */
 #section3 {
     height: auto;
-    width: 110%;
+    width: 100%;
    
 }
 
@@ -134,7 +158,7 @@ text-align: left;
 
 
 footer {
-    width: 110%;
+    width: 100%;
     flex-direction: column;
     
 }
