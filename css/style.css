@@ -1,53 +1,85 @@
 
+
+
+/* ---Variable--- */  
+:root {
+
+
+    /* Colors*/
+
+    --blue :  #0065FC;
+    --blue-light : #DEEBFF;
+    --grey : #F2F2F2;
+
+
+
+    /* Shadows */
+   
+    --shadow-one-hover:  0px 5px 15px  var(--blue) ;
+    --shadows-two-hover: 10px 10px 10px var(--blue-light) ;
+
+
+
+}
+
+
+/* --- Global --- */
+
 * {
-    box-sizing: border-box;
+   box-sizing: border-box;
    /* box-sizing  */
-  
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Raleway', sans-serif ;
+   /*Police Raleway */
+   
    }
 
  
    body {
-   
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: hsl(0, 0%, 100%);
-    font-family: 'Raleway', sans-serif ;
-    font-size: 20px;
-    /*Police Raleway */
+    width: 100%;
+    
   }
 
 #Container1 {
-    
-    width: 1640px;
-    min-width: 320px;
-    padding: 15px;
+    width: 95%;
+    min-width: 340px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
-/* Header */
+
+
+/* ---Header---*/
 header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    
+    margin-top: 2px;
 }
 
 header ul {
 display: flex;
 list-style: none;
-
+margin: 0px;
+padding: 0px;
 }
 
 header img {
-    width: 115px;
+    display: flex;
+    justify-content: flex-start;
     height: 50px;
-    margin: 20px 30px 0 30px;
+    margin: 45px 0px 0 45px;
 }
 
 header li {
-    margin: 0 45px 0 35px;
-    text-decoration: none;
+    padding-top: 60px;
     font-size: large;
+}
+header .a {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 header .a:link {
@@ -55,25 +87,23 @@ header .a:link {
 }
 
 header .a:hover {
-    color: #0065FC;
+    color: var(--blue);
     border-top: 3px solid;
-    padding-top: 30px;
+    padding-top: 58px;
 }
 
 /* Nav */
 
 nav {
-    padding-left: 2%;
+    
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-width: 320px;
+    margin: 0px 6px 0px 30px
 }
 
 h1 {
 font-size: x-large;
-margin-bottom: auto;
-word-break: break-all ;
+
 
 
 }
@@ -86,19 +116,30 @@ font-size: medium;
 /* Search area*/
 nav #icon {
 padding: 20px;
+background-color: var(--grey);
+border: 1px solid var(--grey);
+border-radius:17px 0px 0px 17px;
 }
 
 nav form {
+font-size: 15px;
 display: flex;
-margin-right: auto;
-border: 1px solid rgb(242, 242, 242);
-background-color: rgb(242, 242, 242);
-border-radius: 17px;
+align-items: center;
+margin-top: 15px;
 }
 
+#Search {
+    display: flex;
+ 
+}
+
+
+
 nav input[type=text] {
-border: 1px solid rgb(242, 242, 242);
+padding: 17px;
+border: 2px solid var(--grey);
 font-weight: bold;
+font-size: 20px;
 color: black;
 }
 
@@ -107,8 +148,8 @@ nav #Mini-Recherche {
 }
 
 nav #text {
-border: 1px solid #0065FC;
-background-color: #0065FC;
+border: 1px solid var(--blue);
+background-color: var(--blue);
 font-weight: bold;
 color: white;
 border-radius:0 25px 25px 0;
@@ -119,26 +160,29 @@ padding: 20px;
 /* Nav Filter */
 nav #filter1 {
     display: flex;
-    
-    align-items: center;
+    flex-direction: row;
+    padding-top: 15px;
+    margin-bottom: 15px;
+
 }
 
 nav #p1 {
     
-    
+    padding-top: 40px;
     font-weight: bold;
     font-size: large;
-     
+    padding-right: 10px; 
     
 }
 
 nav ul {
-
+   
     display: flex;
     list-style: none;
     font-weight: bold;
     align-items: center;
     padding-left: 0%;
+    justify-content: space-around;
 }
 
 
@@ -147,7 +191,7 @@ nav ul {
 nav li {
     max-height: 60px;
     display: flex;
-    border: 4px solid rgb(242, 242, 242);
+    border: 4px solid var(--grey);
     border-radius: 45px;
     margin: 18px;
     align-items: center;
@@ -167,6 +211,7 @@ nav #Noborder {
     border: 0px;
     padding: 0%;
     margin: 1%;
+
 }
 
 nav .filter {
@@ -179,17 +224,22 @@ nav .i {
 
     display: flex;
     margin-left: -34px;
-    border: 4px solid #DEEBFF;
-    background-color: #DEEBFF;
+    border: 4px solid var(--blue-light);
+    background-color: var(--blue-light);
     padding: 14px;
-    color: #0065FC;
+    color: var(--blue);
     border-radius: 45px;
     
 }
 
+nav .li-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 nav .li-hover:hover {
- background-color: #DEEBFF;
- color:#0065FC;
+ background-color: var(--blue-light);
+ color:var(--blue);
 }
 
 
@@ -198,7 +248,7 @@ nav #info{
 
 display: flex;
 align-items: center;
-margin-left: 25px;
+margin-bottom: 15px;
 
 }
 
@@ -207,127 +257,118 @@ nav .i2 {
 font-weight: bold;
 font-size: small;  
 padding: 6px; 
-border: 2px solid rgb(242, 242, 242);
-color: #0065FC;
+border: 2px solid var(--grey);
+color: var(--blue);
 border-radius: 40%;
 margin-right: 15px;
 }
 
 /* Main */ 
 .main1 {
-    height: auto;
-    min-width: 400px;
+    margin-top: 10px;
+   
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* Section 1  "Hébergement à Marseille" */
     .ligne1 {
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-    .ligne2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 4%;
-    padding-bottom: 5%;
-}
+  
 
     #section1 {
     
-    width: 60%;
-    background-color:rgb(242, 242, 242);
+    width: 62%;
+    background-color:var(--grey);
     padding: 2%;
-    border: 1px solid rgb(242, 242, 242) ;
+    border: 1px solid var(--grey);
     border-radius: 3%;
-    padding-top: 1%;
+   
     }
 
  .card {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 230px;
     width: 30%;
     background-color: white;
     border: 4px solid white;
     border-radius: 20px;
     color: black;
+    margin-top: 18px;
 }
 
 
 .card:link,
 .card2:link,
 .card-large:link,
-.card-container {
+.card-container,
+.filter {
     text-decoration: none;
     
 }
 
 .card:hover {
-    box-shadow: 0px 5px 15px  #0065FC ;
+    box-shadow: var(--shadow-one-hover);
     
 }
 
 .card-image {
-    height: 150px;
-    position: relative;
-    overflow: hidden;
+  display: block;
+   
+   
+}
+
+.card-image img {
+    height:115px;
+    width: 100%;
+    object-fit: cover;
     border: 2px solid white ;
     border-radius: 20px 20px 0px 0px;
 }
 
-.card-image img {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-
 .card-body {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     overflow: hidden;
     text-align: left;
-    margin-left: 4%;
-    margin-top: -5%;
-    
+    object-fit: fill;
+    justify-content: space-around;
 }
-
 .card-title {
     font-weight: bold;
 }
 
-.card-value {
-font-size: large;
-margin-top: -4%;
-}
+
 
 .card-star {
     font-size: medium;
-    margin-top: -4%;
-    color:rgb(242, 242, 242);
+    color:var(--grey);
 }
 .star1 {
-    color: #0065FC;
+    color: var(--blue);
 }
 .card-star:hover .star {
-    color:#0065FC;
+    color:var(--blue);
 }
 
 .card-star .star:hover ~.star {
-    color:rgb(242, 242, 242);
+    color:var(--grey);
 }
 
 
 .Plus {             
-    padding-left: 2%;
+    padding-left: 5%;
     font-weight: bold;
     text-decoration: none;
     color:black;
@@ -337,70 +378,82 @@ margin-top: -4%;
 /*  Section 2 "Les plus populaires" */
 
 .section2 {
-
-    overflow: hidden;
     width: 36%;
-    background-color:rgb(242, 242, 242);
+    background-color:var(--grey);
     padding-left: 3%;
-    border: 1px solid rgb(242, 242, 242) ;
+    border: 1px solid var(--grey) ;
     border-radius: 3%;
-    
-  
+    padding: 2%;
 }
 
+.ligne2 {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#star-origin {
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+   font-size: x-large;
+}
 
 .card2 {
     color: black;
     display: flex;
-    height: 25%;
+    height: 175px;
     width: 90%;
     background-color: white;
     border: 4px solid white;
     border-radius: 20px;
-    margin-bottom: 5%;
+    object-fit: fill;
+    font-size: 20;
 }
 
 
 .card-image2 {
-    min-width: 42%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid white ;
-    border-radius: 20px 0px 0px 20px;
+    width: 30%;
+    object-fit: fill;
+    
 }
 
 .card-image2 img {
-    min-width: 100%;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    object-fit: cover;
+    border: 2px solid white ;
+    border-radius: 20px 0px 0px 20px;
 }
 .card-body2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin-left: 7%;
+    object-fit: fill;
 }
 
 .card-title2 {
     font-weight: bold;
-    font-size: large;
+    object-fit: fill;
 }
 .card-value2 {
-    font-size: large;
+    
+    object-fit: fill;
 }
 .card-star2 {
     font-size: medium;
     color:rgb(242, 242, 242);
-    margin-top: 10%
+    object-fit: fill;
 }
 
 .card-star2:hover .star {
-    color:#0065FC;
+    color:var(--blue);
 }
 
 .card-star2 .star:hover ~.star {
-    color:rgb(242, 242, 242);
+    color:var(--grey);
 }
 
 .card2:hover {
@@ -408,18 +461,18 @@ margin-top: -4%;
     height: 30%;
     font-size: x-large;
     font-weight: bold;
-    align-items: center;
-    box-shadow: 10px 10px 10px #DEEBFF ;
+    text-align: center;
+    box-shadow:  var(--shadows-two-hover);
 }
 
 /* Title main */
 
 .titre2 {
-    display: flex;
     font-size: x-large;
     font-weight: bold;
-    justify-content: space-between;
     padding-right: 8%;
+    margin-bottom: 15px;
+    
 }
 
 .titre3 {
@@ -433,6 +486,7 @@ margin-top: -4%;
 /* Section 3 "Activités à Marseille" */
 
 #section3 {
+margin-top: 20px;
 display: flex;
 flex-direction: column;
 width: 100%;
@@ -440,20 +494,21 @@ height: 750px;
 }
 
 .section3bis {
+padding-top: 15px;
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 justify-content: space-around;
-height: 90%;
+height: 100%;
 width: 100%;
 }
 
 /*  Card 1 / 2 */
 .card-large {
  width: 20%;
- height: 73%;
- display: flex;
- flex-direction: column;
- border: 1px solid rgb(242, 242, 242) ;
+ height: 540px;
+ margin-top: 25px;
+ border: 1px solid var(--grey) ;
  border-radius: 20px 20px 20px 20px;
  color: black;
 }
@@ -461,104 +516,85 @@ width: 100%;
 .image-large {
     
     height: 90%;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgb(242, 242, 242) ;
-    border-radius: 20px 20px 0px 0px;
+
 }
 
 .image-large img {
-    min-width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 485px;
+    object-fit: cover;
+    border: 1px solid var(--grey) ;
+    border-radius: 20px 20px 0px 0px;
 }
   
 .card-title3 {
+    width: 100%;
+    height: 60px;
     font-size: large;
     font-weight: bold;
-    margin-left: 15px;
+    padding: 12px;
 }
 
 /* card column 2 / 3 */
 .two-card {
  width: 20%;
- height: 80%;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- 
+ height: 540px;
+ margin-top: 25px;
 }
 
 .card-container {
+    
     height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(242, 242, 242) ;
+    justify-content: space-between;
+    border: 1px solid var(--grey) ;
     border-radius: 20px 20px 20px 20px;
-    margin: 5px;
     color: black
 }
 
 .little-card1 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgb(242, 242, 242) ;
-    border-radius: 20px 20px 0px 0px;
-
-    
+    height: 50%;
+    margin-bottom: 3px;
 }
 
 .little-card1 img {
-    height: 130%;
+
+    height: 220px;
+    object-fit: cover;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border: 1px solid var(--grey);
+    border-radius: 20px 20px 0px 0px;
 }
 
 .little-card2 {
-        height: 100%;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        overflow: hidden;
-        border: 2px solid rgb(242, 242, 242) ;
-        border-radius: 20px 20px 0px 0px;
-        padding: 5px;
+        height: 50%;
+        
 }
 
 .little-card2 img {
-    height: 200%;
-    width: 170%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 220px;
+    width: 100%;
+    border: 1px solid var(--grey);
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 /* Footer */
 
 footer {
-    background-color: rgb(242, 242, 242) ;
+    background-color: var(--grey) ;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 100%;
-    min-width: 400px;
+    height: 250px;
+    padding: 45px;
 }
 
 
 footer ul {
- margin-right: auto;
+   width: 40%;
 }
 
 

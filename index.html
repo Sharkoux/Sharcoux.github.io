@@ -42,23 +42,23 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
          <!--Form-->
+        <div id="search">
         <form method="post" action="/">
         <span id="icon"><i class="fa-solid fa-location-dot"></i></span>
         <input type="text" name="localisation" placeholder="   Marseille, France">
         <input type="button" value="Rechercher" id="text">
         <button id="Mini-Recherche" type="button" ><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
+        </div>
         <!--Filter-->
         <div id="filter1">
-        <p id="p1">Filtres</p>  
-        <ul>
-        <li id="Noborder">
-        
+        <p id="p1">Filtres</p> 
+    
         <ul id="filters">
-        <li class="li-hover"><i class="fa-solid fa-money-bill-wave i"></i> <p class="filter">Économique</p></li>
-        <li class="li-hover"><i class="fa-solid fa-child-reaching i"></i> <p class="filter">Familial</p></li>
-        </ul>
-        </li>
+        <li  class="li-hover li-ligne1"><i class="fa-solid fa-money-bill-wave i"></i> <a href="#" class="filter">Économique</a></li>
+        <li class="li-hover li-ligne1"><i class="fa-solid fa-child-reaching i"></i> <p class="filter">Familial</p></li>
+        
+        
         <li class="li-hover"><i class="fa-solid fa-heart i"></i> <p class="filter"> Romantique</p></li>
         <li class="li-hover"><i class="fa-solid fa-dog i"></i>  <p class="filter">Animaux autorisés</p></li>
         </ul>
@@ -96,8 +96,8 @@
                      <div class="card-star"><i class="fa-solid fa-star star star1"></i><i class="fa-solid fa-star star star1"></i><i class="fa-solid fa-star star star1"></i><i class="fa-solid fa-star star star1"></i><i class="fa-solid fa-star star"></i></div>
                  </div>
                 </a>
-        </div>
-        <div class="ligne2">
+        
+        
             <a class="card" href="#">
                 <div class="card-image"><img src="./Assets/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="L'Hôtel de la Mer à Marseille "></div> 
                      <div class="card-body">
@@ -122,13 +122,14 @@
                          <div class="card-star"><i class="fa-solid fa-star star star1"></i><i class="fa-solid fa-star star star1"></i><i class="fa-solid fa-star star star1"></i><i class="fa-solid fa-star star star1"></i><i class="fa-solid fa-star star star1"></i></div>
                      </div>
                     </a>
-        </div>
+       
         <a href="" class="Plus">Afficher plus</a>
+        </div>
         </div>
         <!--Section 2 "Les plus populaires" -->
         <div class="section2">
-            <p class="titre2">Les plus populaires <i class="fa-solid fa-star"></i></p>
-            <a class="card2" href="#">
+           <div id="star-origin"><p class="titre2">Les plus populaires </p><i class="fa-solid fa-star"></i></div> 
+            <div class="ligne2"> <a class="card2" href="#">
                 <div class="card-image2"><img src="./Assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="L'hotel Le Soleil du matin à Marseille "></div> 
                      <div class="card-body2">
                          <div class="card-title2"><p>Hôtel Le Soleil du Matin</p></div>
@@ -155,6 +156,8 @@
             
             </div>
         </div>
+        </div>
+    </main>
         <!--Section 3 "Activités à Marseille"-->
             <div id="section3"><p class="titre3">Activités à Marseille</p>
                 <div class="section3bis">
@@ -185,7 +188,7 @@
                 </div>
             </div>
         </div>
-        </main>
+       
 
         <footer>
             <ul>
