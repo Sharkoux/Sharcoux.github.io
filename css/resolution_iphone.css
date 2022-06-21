@@ -1,3 +1,8 @@
+.container {
+    margin: 0px;
+}
+
+
 header {
     flex-direction: column;
     border-bottom: 3px solid var(--grey);
@@ -25,25 +30,25 @@ justify-content: space-around;
 nav {
 width: 90%;
 align-items: center;
-
+margin-left: 20px;
+margin-right: 5px;
 }
 
 
 
-nav #filters {
-    padding-left: 0px;
+nav .filter_ul {
     line-height: 10%;
     white-space: nowrap;
 }
 
-nav #text {
+nav .search_input {
     display: none;
 }
 
 
 
 
-nav #Mini-Recherche{
+nav .search_btn{
     display: block;
     border: 1px solid var(--blue);
     background-color: var(--blue);
@@ -55,111 +60,115 @@ nav #Mini-Recherche{
 
 
 
-nav .i2 {
+nav .info_icon {
     margin-right: auto;
 }
 
 /* Main iphone */
 
-.main1 {
+.main {
 width: 100%;
 }
 
-.section2 {
+.Pop {
+
 border-radius: 0%;
-width: 100%;
+width: 95%;
 margin-right: 5px;
 margin-left: 5px;
 padding: 7px;
 }
-#star-origin { 
+.Pop_star { 
 padding-top: 10px;
 }
 
-.titre2 {
+.Heberg_title {
 padding-left: 5%;
 text-align: center;
 justify-content: space-between;
-
+white-space: nowrap;
 }
 
-.titre3 {
+.Pop_card {
+    width: 90%;
+    height: 28%;
+}
+
+.Pop_title {
     text-align: center;
     padding-left: 0%;
 }
 
-#section1 {
+#Heberg {
     background-color: white;
     border: none;
 }
 
-.ligne1,
-.ligne2 {
+.Heberg_container,
+.Pop_container {
     flex-direction: column;
 }
 
-.card{
+.Heberg_card,
+.Act_card{
     margin: 20px;
     width: 92%;
+    border:3px solid var(--grey)
 }
 
-.card2 {
-    
-    width: 92%;
-    margin: 20px;
-}
 
-.Plus {
+
+.Heberg_plus{
 text-align: left;
 
 }
 
 /* Section 3 "Activité à Marseille */
-#section3 {
+#Act {
     height: auto;
     width: 100%;
-   
+    margin-bottom: 30px;
 }
 
-.section3bis{
+.Act_bis{
     flex-direction: column;
     align-items: center;
   
 }
 
 
-.card-large {
+.Act_card-large {
     width: 75%;
     height: 240px;
 }
 
-.card-title3 {
+.Act_card-title3 {
 padding: 0px;
 text-align: center;
 }
 
-.image-large img { 
+.Act_image-large img { 
     height: 200px;
 
 }
 
-.two-card {
+.Act_two-card {
     width: 75%;
     height: 520px;
 }
 
-.card-container { 
+.Act_card-container { 
     margin-bottom: 15px;
 }
 
 
-.little-card1,
-.little-card2 {
+.Act_little-card1,
+.Act_little-card2 {
     height: 45%;
 
 }
-.little-card1 img,
-.little-card2 img {
+.Act_little-card1 img,
+.Act_little-card2 img {
     height: 190px;
 }
 

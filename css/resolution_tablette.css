@@ -32,7 +32,7 @@ nav {
     
 }
 
-nav #filter1 {
+nav .filter {
     flex-direction: column;
    margin-top: 40px;
    line-height: 5%;
@@ -40,12 +40,9 @@ nav #filter1 {
 
 nav form {
     width: auto;
-    justify-content:left;
-    margin-left: auto;
-
 }
 
-nav #p1 {
+nav .filter_p1 {
     padding-top: 0px;
     text-align: left;
 }
@@ -53,7 +50,7 @@ nav #p1 {
 
 
 
-nav ul {
+nav .filter_ul {
     width: 90%;
     flex-direction: row;
     justify-content: space-between;
@@ -68,7 +65,7 @@ nav li {
 }
 
     
-    nav #info {
+    nav .info {
         margin: auto;
         margin-top: auto;
        
@@ -76,14 +73,14 @@ nav li {
 
 /* Main Tablette */
 
-.main1 {
+.main {
     flex-direction: column;
     align-items: center;
     
 }
 
 /* Section 1 / 2 tablette */
-.section2 {
+.Pop {
     order: 1;
     width: 100%;
     height: 730px;
@@ -91,23 +88,23 @@ nav li {
     
 }
 
-.ligne2 {
+.Pop_container {
     align-items: center;
 }
 
-.card2 {
+.Pop_card {
    width: 70% ;
    height: 30%;
 }
 
-#star-origin {
+.Pop_star {
     width: 95%;
     justify-content: space-around;
     text-align: center;
 }
 
 
-#section1 {
+#Heberg {
     
     display: flex;
     flex-direction: column;
@@ -117,14 +114,14 @@ nav li {
     
 }
 
-.card {
+.Heberg_card {
     height: 100%;
     margin: 7px;
 }
 
 /* Section 3 Tablette */
 
-.two-card { 
+.Act_two-card { 
     margin-left:0%;
     width: 25%;
 

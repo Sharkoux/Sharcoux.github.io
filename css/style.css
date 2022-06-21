@@ -38,12 +38,13 @@
  
    body {
     width: 100%;
-    
+ 
   }
 
-#Container1 {
+.container {
+    max-width: 1640px;
     width: 95%;
-    min-width: 340px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -51,6 +52,8 @@
 
 
 /* ---Header---*/
+
+
 header {
     width: 100%;
     display: flex;
@@ -114,7 +117,7 @@ font-size: medium;
 
 
 /* Search area*/
-nav #icon {
+nav .search_icon {
 padding: 20px;
 background-color: var(--grey);
 border: 1px solid var(--grey);
@@ -128,7 +131,7 @@ align-items: center;
 margin-top: 15px;
 }
 
-#Search {
+.search {
     display: flex;
  
 }
@@ -143,11 +146,11 @@ font-size: 20px;
 color: black;
 }
 
-nav #Mini-Recherche {
+nav .search_btn {
  display: none;
 }
 
-nav #text {
+nav .search_input {
 border: 1px solid var(--blue);
 background-color: var(--blue);
 font-weight: bold;
@@ -158,7 +161,7 @@ padding: 20px;
 
 
 /* Nav Filter */
-nav #filter1 {
+nav .filter {
     display: flex;
     flex-direction: row;
     padding-top: 15px;
@@ -166,53 +169,45 @@ nav #filter1 {
 
 }
 
-nav #p1 {
+nav .filter_p1 {
     
-    padding-top: 40px;
+    padding-top: 35px;
     font-weight: bold;
     font-size: large;
-    padding-right: 10px; 
+    padding-right: 15px; 
     
 }
 
-nav ul {
-   
+.filter_p {
+ color: black;
+ margin-left: 10px;
+}
+
+nav .filter_ul {
+    width: 70%;
     display: flex;
-    list-style: none;
+    flex-direction: row;
+    
     font-weight: bold;
     align-items: center;
     padding-left: 0%;
-    justify-content: space-around;
 }
-
 
 
 
 nav li {
-    max-height: 60px;
+    max-height: 50px;
     display: flex;
     border: 4px solid var(--grey);
     border-radius: 45px;
     margin: 18px;
-    align-items: center;
     padding-right: 28px;
     padding-left: 17px;
     
 }
-nav #filters {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-   
-}
 
-nav #Noborder {
-    display: flex;
-    border: 0px;
-    padding: 0%;
-    margin: 1%;
 
-}
+
 
 nav .filter {
 font-size: large;
@@ -220,31 +215,31 @@ margin-left: 15px;
 
 }
 
-nav .i {
+nav .filter_icon {
 
     display: flex;
     margin-left: -34px;
     border: 4px solid var(--blue-light);
     background-color: var(--blue-light);
-    padding: 14px;
+    padding: 12px;
     color: var(--blue);
-    border-radius: 45px;
+    border-radius: 50%;
     
 }
 
-nav .li-hover {
+nav .filter_li-hover {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav .li-hover:hover {
+nav .filter_li-hover:hover {
  background-color: var(--blue-light);
  color:var(--blue);
 }
 
 
 
-nav #info{
+nav .info{
 
 display: flex;
 align-items: center;
@@ -253,37 +248,31 @@ margin-bottom: 15px;
 }
 
 /* icone info */
-nav .i2 {
+nav .info_icon {
 font-weight: bold;
-font-size: small;  
-padding: 6px; 
+font-size: 14px;  
+padding: 10px 10px; 
 border: 2px solid var(--grey);
 color: var(--blue);
-border-radius: 40%;
+border-radius: 50%;
 margin-right: 15px;
 }
 
 /* Main */ 
-.main1 {
+.main {
     margin-top: 10px;
-   
+    word-break: break-all;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 /* Section 1  "Hébergement à Marseille" */
-    .ligne1 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
+ 
   
 
-    #section1 {
+    #Heberg {
+   
     
     width: 62%;
     background-color:var(--grey);
@@ -293,7 +282,24 @@ margin-right: 15px;
    
     }
 
- .card {
+    .Heberg_title {
+        font-size: x-large;
+        font-weight: bold;
+        padding-right: 8%;
+        margin-bottom: 15px;
+        
+    }
+    
+    .Heberg_container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+
+ .Heberg_card {
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -307,27 +313,27 @@ margin-right: 15px;
 }
 
 
-.card:link,
-.card2:link,
-.card-large:link,
-.card-container,
-.filter {
+.Heberg_card:link,
+.Pop_card:link,
+.Act_card-large:link,
+.Act_card-container:link,
+.filter_p:link {
     text-decoration: none;
     
 }
 
-.card:hover {
+.Heberg_card:hover {
     box-shadow: var(--shadow-one-hover);
     
 }
 
-.card-image {
+.Heberg_card-image {
   display: block;
    
    
 }
 
-.card-image img {
+.Heberg_card-image img {
     height:115px;
     width: 100%;
     object-fit: cover;
@@ -335,7 +341,7 @@ margin-right: 15px;
     border-radius: 20px 20px 0px 0px;
 }
 
-.card-body {
+.Heberg_card-body {
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -345,29 +351,29 @@ margin-right: 15px;
     object-fit: fill;
     justify-content: space-around;
 }
-.card-title {
+.Heberg_card-title {
     font-weight: bold;
 }
 
 
 
-.card-star {
+.Heberg_card-star {
     font-size: medium;
     color:var(--grey);
 }
-.star1 {
+.star-blue {
     color: var(--blue);
 }
-.card-star:hover .star {
+.Heberg_card-star:hover .star {
     color:var(--blue);
 }
 
-.card-star .star:hover ~.star {
+.Heberg_card-star .star:hover ~.star {
     color:var(--grey);
 }
 
 
-.Plus {             
+.Heberg_plus {             
     padding-left: 5%;
     font-weight: bold;
     text-decoration: none;
@@ -377,7 +383,7 @@ margin-right: 15px;
 
 /*  Section 2 "Les plus populaires" */
 
-.section2 {
+.Pop {
     width: 36%;
     background-color:var(--grey);
     padding-left: 3%;
@@ -386,47 +392,54 @@ margin-right: 15px;
     padding: 2%;
 }
 
-.ligne2 {
+.Pop_star {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+ }
+
+.Pop_container{
     height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-#star-origin {
-   width: 90%;
-   display: flex;
-   justify-content: space-between;
-   font-size: x-large;
+.Pop_title {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.card2 {
+
+.Pop_card {
     color: black;
     display: flex;
-    height: 175px;
+    height: 160px;
     width: 90%;
     background-color: white;
     border: 4px solid white;
     border-radius: 20px;
     object-fit: fill;
-    font-size: 20;
+   
 }
 
 
-.card-image2 {
+.Pop_card-image {
     width: 30%;
     object-fit: fill;
     
 }
 
-.card-image2 img {
+.Pop_card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border: 2px solid white ;
     border-radius: 20px 0px 0px 20px;
 }
-.card-body2 {
+.Pop_card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -434,58 +447,44 @@ margin-right: 15px;
     object-fit: fill;
 }
 
-.card-title2 {
+.Pop_card-title {
     font-weight: bold;
     object-fit: fill;
 }
-.card-value2 {
+.Pop_card-value {
     
     object-fit: fill;
 }
-.card-star2 {
+.Pop_card-star {
     font-size: medium;
     color:rgb(242, 242, 242);
     object-fit: fill;
 }
 
-.card-star2:hover .star {
+.Pop_card-star:hover .star {
     color:var(--blue);
 }
 
-.card-star2 .star:hover ~.star {
+.Pop_card-star .star:hover ~.star {
     color:var(--grey);
 }
 
-.card2:hover {
+.Pop_card:hover {
     width: 80%;
     height: 30%;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     text-align: center;
     box-shadow:  var(--shadows-two-hover);
 }
 
-/* Title main */
 
-.titre2 {
-    font-size: x-large;
-    font-weight: bold;
-    padding-right: 8%;
-    margin-bottom: 15px;
-    
-}
-
-.titre3 {
-    font-size: x-large;
-    font-weight: bold;
-    padding-left: 4%;
-}
 
 
 
 /* Section 3 "Activités à Marseille" */
 
-#section3 {
+#Act {
 margin-top: 20px;
 display: flex;
 flex-direction: column;
@@ -493,90 +492,97 @@ width: 100%;
 height: 750px;
 }
 
-.section3bis {
+.Act_title {
+    font-size: x-large;
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+.Act_bis {
 padding-top: 15px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-between;
 height: 100%;
 width: 100%;
 }
 
 /*  Card 1 / 2 */
-.card-large {
+.Act_card-large {
  width: 20%;
  height: 540px;
  margin-top: 25px;
- border: 1px solid var(--grey) ;
+ border: 2px solid var(--grey) ;
  border-radius: 20px 20px 20px 20px;
  color: black;
 }
 
-.image-large {
+.Act_image-large {
     
     height: 90%;
 
 }
 
-.image-large img {
+.Act_image-large img {
     width: 100%;
     height: 485px;
     object-fit: cover;
-    border: 1px solid var(--grey) ;
+    border: 2px solid var(--grey) ;
     border-radius: 20px 20px 0px 0px;
 }
   
-.card-title3 {
+.Act_card-title {
     width: 100%;
     height: 60px;
     font-size: large;
     font-weight: bold;
-    padding: 12px;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 /* card column 2 / 3 */
-.two-card {
+.Act_two-card {
  width: 20%;
  height: 540px;
  margin-top: 25px;
 }
 
-.card-container {
+.Act_card-container {
     
     height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid var(--grey) ;
+    border: 2px solid var(--grey) ;
     border-radius: 20px 20px 20px 20px;
     color: black
 }
 
-.little-card1 {
+.Act_little-card1 {
     height: 50%;
     margin-bottom: 3px;
 }
 
-.little-card1 img {
+.Act_little-card1 img {
 
     height: 220px;
     object-fit: cover;
     width: 100%;
-    border: 1px solid var(--grey);
+    border: 2px solid var(--grey);
     border-radius: 20px 20px 0px 0px;
 }
 
-.little-card2 {
+.Act_little-card2 {
         height: 50%;
         
 }
 
-.little-card2 img {
+.Act_little-card2 img {
     height: 220px;
     width: 100%;
-    border: 1px solid var(--grey);
+    border: 2px solid var(--grey);
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -589,12 +595,12 @@ footer {
     flex-direction: row;
     width: 100%;
     height: 250px;
-    padding: 45px;
+    padding: 40px;
 }
 
 
 footer ul {
-   width: 40%;
+   width: 35%;
 }
 
 
