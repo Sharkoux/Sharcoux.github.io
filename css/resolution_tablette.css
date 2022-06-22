@@ -3,18 +3,18 @@
 
 /*header resolution tablette*/
 
-header {
+.header {
    
     flex-direction: row;
     align-items: center;
 }
 
-header ul {
+.header_ul {
     align-items: center;
     padding-bottom: 10px;
 }
 
-header img {
+.header_img {
     height: 70px;
     margin: 15px 20px 0 100px;
     
@@ -32,17 +32,17 @@ nav {
     
 }
 
-nav .filter {
-    flex-direction: column;
+.filter {
+   flex-direction: column;
    margin-top: 40px;
    line-height: 5%;
 }
 
-nav form {
+.nav_form {
     width: auto;
 }
 
-nav .filter_p1 {
+.filter_p1 {
     padding-top: 0px;
     text-align: left;
 }
@@ -50,7 +50,7 @@ nav .filter_p1 {
 
 
 
-nav .filter_ul {
+.filter_ul {
     width: 90%;
     flex-direction: row;
     justify-content: space-between;
@@ -65,7 +65,7 @@ nav li {
 }
 
     
-    nav .info {
+    .info {
         margin: auto;
         margin-top: auto;
        
@@ -136,6 +136,6 @@ footer {
     justify-content: space-around;
 }
 
-footer ul {
+.footer_ul {
     width: 30%;
 }  

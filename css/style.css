@@ -7,18 +7,16 @@
 
     /* Colors*/
 
-    --blue :  #0065FC;
-    --blue-light : #DEEBFF;
-    --grey : #F2F2F2;
+    --blue: #0065FC;
+    --blue-light:#DEEBFF;
+    --grey: #F2F2F2;
 
 
 
     /* Shadows */
    
-    --shadow-one-hover:  0px 5px 15px  var(--blue) ;
-    --shadows-two-hover: 10px 10px 10px var(--blue-light) ;
-
-
+    --shadow-one-hover:0px 5px 15px var(--blue);
+    --shadows-two-hover:10px 10px 10px var(--blue-light);
 
 }
 
@@ -26,13 +24,12 @@
 /* --- Global --- */
 
 * {
+    /* box-sizing  */
    box-sizing: border-box;
-   /* box-sizing  */
    margin: 0px;
    padding: 0px;
-   font-family: 'Raleway', sans-serif ;
    /*Police Raleway */
-   
+   font-family: 'Raleway', sans-serif ;
    }
 
  
@@ -41,7 +38,7 @@
  
   }
 
-.container {
+   .container {
     max-width: 1640px;
     width: 95%;
     min-width: 350px;
@@ -51,94 +48,165 @@
 }
 
 
-/* ---Header---*/
+
+    /* LINK */
+    a {
+    text-decoration: none;
+    }
+    
 
 
-header {
+
+    /* Format img Card */
+    .img {
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid white ;
+    border-radius: 20px 20px 0px 0px;
+    }
+
+
+
+
+    /* Format Card Container */
+    .card-container {
+        display: flex;
+        background-color: white;
+        border: 4px solid white;
+        border-radius: 20px;
+        color: black;
+        margin-top: 18px;
+    }
+
+
+
+    /* Format Card Body */
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        object-fit: fill;
+        justify-content: space-around;
+
+    }
+
+
+
+    /* Format Title */
+    ._title {
+        font-size: x-large;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+
+    /* Format Stars */
+
+
+    ._card-star {
+        font-size: medium;
+        color:rgb(242, 242, 242);
+        object-fit: fill;
+    }
+    
+    ._card-star:hover .star {
+        color:var(--blue);
+    }
+    
+    ._card-star .star:hover ~.star {
+        color:var(--grey);
+    }
+    
+    .star-blue {
+        color: var(--blue);
+    }  
+
+    /* Body Section 1 / 2 */
+      
+    
+        ._body {
+            background-color:var(--grey);
+            padding: 2%;
+            border: 1px solid var(--grey);
+            border-radius: 3%;
+        }
+
+
+
+    /* ---Header---*/
+
+
+    .header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     margin-top: 2px;
-}
+    }
 
-header ul {
-display: flex;
-list-style: none;
-margin: 0px;
-padding: 0px;
-}
+    .header_ul {
+    display: flex;
+    list-style: none;       
+    margin: 0px;
+    padding: 0px;
+    }
 
-header img {
+    .header_img {
     display: flex;
     justify-content: flex-start;
     height: 50px;
     margin: 45px 0px 0 45px;
-}
+    }
 
-header li {
+    .header_li {
     padding-top: 60px;
     font-size: large;
-}
-header .a {
+    }
+
+    .header_a {
     padding-left: 40px;
     padding-right: 40px;
-}
+    }
 
-header .a:link {
-    text-decoration: none;
-}
-
-header .a:hover {
+    .header_a:hover {
     color: var(--blue);
     border-top: 3px solid;
     padding-top: 58px;
-}
+    }
 
-/* Nav */
+/* ---Nav--- */
+
 
 nav {
-    
     display: flex;
     flex-direction: column;
     margin: 0px 6px 0px 30px
 }
 
-h1 {
-font-size: x-large;
-
-
-
-}
-nav p {
+.nav_p {
 font-size: medium;
-
 }
 
 
-/* Search area*/
-nav .search_icon {
+/* ---Search area---*/
+
+
+
+.search_icon {
 padding: 20px;
 background-color: var(--grey);
 border: 1px solid var(--grey);
 border-radius:17px 0px 0px 17px;
 }
 
-nav form {
+.nav_form {
 font-size: 15px;
 display: flex;
 align-items: center;
 margin-top: 15px;
 }
 
-.search {
-    display: flex;
- 
-}
 
-
-
-nav input[type=text] {
+.search_text[type=text] {
 padding: 17px;
 border: 2px solid var(--grey);
 font-weight: bold;
@@ -146,11 +214,11 @@ font-size: 20px;
 color: black;
 }
 
-nav .search_btn {
+.search_btn {
  display: none;
 }
 
-nav .search_input {
+.search_input {
 border: 1px solid var(--blue);
 background-color: var(--blue);
 font-weight: bold;
@@ -160,16 +228,20 @@ padding: 20px;
 }
 
 
-/* Nav Filter */
-nav .filter {
+/* ---Filter--- */
+
+
+
+    .filter {
     display: flex;
     flex-direction: row;
     padding-top: 15px;
     margin-bottom: 15px;
-
+    font-size: large;
+    margin-left: 15px;
 }
 
-nav .filter_p1 {
+    .filter_p1 {
     
     padding-top: 35px;
     font-weight: bold;
@@ -183,7 +255,7 @@ nav .filter_p1 {
  margin-left: 10px;
 }
 
-nav .filter_ul {
+.filter_ul {
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -207,15 +279,7 @@ nav li {
 }
 
 
-
-
-nav .filter {
-font-size: large;
-margin-left: 15px;
-
-}
-
-nav .filter_icon {
+.filter_icon {
 
     display: flex;
     margin-left: -34px;
@@ -227,28 +291,32 @@ nav .filter_icon {
     
 }
 
-nav .filter_li-hover {
+.filter_li-hover {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav .filter_li-hover:hover {
+.filter_li-hover:hover {
  background-color: var(--blue-light);
  color:var(--blue);
 }
 
 
 
-nav .info{
+/* ---icone info--- */
 
-display: flex;
-align-items: center;
-margin-bottom: 15px;
 
+
+.info {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
 }
 
-/* icone info */
-nav .info_icon {
+
+.info_icon {
 font-weight: bold;
 font-size: 14px;  
 padding: 10px 10px; 
@@ -256,38 +324,31 @@ border: 2px solid var(--grey);
 color: var(--blue);
 border-radius: 50%;
 margin-right: 15px;
+
 }
 
-/* Main */ 
+/* --- Main --- */ 
+
+
+
+
 .main {
     margin-top: 10px;
-    word-break: break-all;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-/* Section 1  "Hébergement à Marseille" */
- 
-  
+
+
+/* ---Section 1  "Hébergement à Marseille"--- */
 
     #Heberg {
-   
-    
     width: 62%;
-    background-color:var(--grey);
-    padding: 2%;
-    border: 1px solid var(--grey);
-    border-radius: 3%;
-   
     }
 
     .Heberg_title {
-        font-size: x-large;
-        font-weight: bold;
-        padding-right: 8%;
-        margin-bottom: 15px;
-        
+        padding-right: 8%; 
     }
     
     .Heberg_container{
@@ -300,27 +361,12 @@ margin-right: 15px;
     
 
  .Heberg_card {
-    text-decoration: none;
-    display: flex;
     flex-direction: column;
     height: 230px;
     width: 30%;
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 20px;
-    color: black;
-    margin-top: 18px;
 }
 
 
-.Heberg_card:link,
-.Pop_card:link,
-.Act_card-large:link,
-.Act_card-container:link,
-.filter_p:link {
-    text-decoration: none;
-    
-}
 
 .Heberg_card:hover {
     box-shadow: var(--shadow-one-hover);
@@ -329,67 +375,38 @@ margin-right: 15px;
 
 .Heberg_card-image {
   display: block;
-   
-   
 }
 
-.Heberg_card-image img {
-    height:115px;
-    width: 100%;
-    object-fit: cover;
-    border: 2px solid white ;
-    border-radius: 20px 20px 0px 0px;
+.Heberg_img {
+    height: 115px; 
 }
 
 .Heberg_card-body {
     padding: 5px;
-    display: flex;
-    flex-direction: column;
     height: 100%;
-    overflow: hidden;
     text-align: left;
-    object-fit: fill;
-    justify-content: space-around;
 }
+
 .Heberg_card-title {
     font-weight: bold;
-}
-
-
-
-.Heberg_card-star {
-    font-size: medium;
-    color:var(--grey);
-}
-.star-blue {
-    color: var(--blue);
-}
-.Heberg_card-star:hover .star {
-    color:var(--blue);
-}
-
-.Heberg_card-star .star:hover ~.star {
-    color:var(--grey);
 }
 
 
 .Heberg_plus {             
     padding-left: 5%;
     font-weight: bold;
-    text-decoration: none;
     color:black;
     text-align: center;
  }
 
-/*  Section 2 "Les plus populaires" */
+/*  ---Section 2 "Les plus populaires"--- */
+
+
 
 .Pop {
     width: 36%;
-    background-color:var(--grey);
     padding-left: 3%;
-    border: 1px solid var(--grey) ;
-    border-radius: 3%;
-    padding: 2%;
+   
 }
 
 .Pop_star {
@@ -406,22 +423,11 @@ margin-right: 15px;
     justify-content: space-around;
 }
 
-.Pop_title {
-    font-size: x-large;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
 
 
 .Pop_card {
-    color: black;
-    display: flex;
     height: 160px;
     width: 90%;
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 20px;
-    object-fit: fill;
    
 }
 
@@ -432,19 +438,15 @@ margin-right: 15px;
     
 }
 
-.Pop_card-image img {
-    width: 100%;
+.Pop_img {
     height: 100%;
-    object-fit: cover;
-    border: 2px solid white ;
     border-radius: 20px 0px 0px 20px;
 }
+
+
 .Pop_card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     margin-left: 7%;
-    object-fit: fill;
+
 }
 
 .Pop_card-title {
@@ -455,19 +457,7 @@ margin-right: 15px;
     
     object-fit: fill;
 }
-.Pop_card-star {
-    font-size: medium;
-    color:rgb(242, 242, 242);
-    object-fit: fill;
-}
 
-.Pop_card-star:hover .star {
-    color:var(--blue);
-}
-
-.Pop_card-star .star:hover ~.star {
-    color:var(--grey);
-}
 
 .Pop_card:hover {
     width: 80%;
@@ -480,9 +470,9 @@ margin-right: 15px;
 
 
 
+/* ---Section 3 "Activités à Marseille"--- */
 
 
-/* Section 3 "Activités à Marseille" */
 
 #Act {
 margin-top: 20px;
@@ -493,101 +483,79 @@ height: 750px;
 }
 
 .Act_title {
-    font-size: x-large;
-    font-weight: bold;
-    padding-left: 2%;
+padding-left: 2%;
+margin-bottom: 0px;
 }
 
 .Act_bis {
 padding-top: 15px;
 display: flex;
 flex-direction: row;
-flex-wrap: wrap;
 justify-content: space-between;
 height: 100%;
 width: 100%;
 }
 
-/*  Card 1 / 2 */
+/*  Card 1 / 3 */
 .Act_card-large {
- width: 20%;
+ width: 22%;
  height: 540px;
- margin-top: 25px;
- border: 2px solid var(--grey) ;
- border-radius: 20px 20px 20px 20px;
- color: black;
+ border: 2px solid var(--grey);
+ flex-direction: column;
+ margin-right: 28px;
+ 
 }
 
 .Act_image-large {
-    
     height: 90%;
-
 }
 
-.Act_image-large img {
-    width: 100%;
+.Act_img {
     height: 485px;
-    object-fit: cover;
-    border: 2px solid var(--grey) ;
-    border-radius: 20px 20px 0px 0px;
 }
   
 .Act_card-title {
-    width: 100%;
-    height: 60px;
-    font-size: large;
     font-weight: bold;
-    padding-top: 15px;
-    padding-left: 15px;
+    padding: 6%;
+  
 }
 
-/* card column 2 / 3 */
+/* card column 2 / 4 */
 .Act_two-card {
- width: 20%;
- height: 540px;
- margin-top: 25px;
+ width: 22%;
+ height: 525px;
+ margin-right: 28px;
 }
 
-.Act_card-container {
-    
-    height: 50%;
+.Act_card-container1 {
+    height: 40%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid var(--grey) ;
-    border-radius: 20px 20px 20px 20px;
-    color: black
 }
-
-.Act_little-card1 {
-    height: 50%;
-    margin-bottom: 3px;
-}
-
-.Act_little-card1 img {
-
-    height: 220px;
-    object-fit: cover;
+.Act_card-container {
+    height: 60%;
     width: 100%;
-    border: 2px solid var(--grey);
-    border-radius: 20px 20px 0px 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid var(--grey) ;
 }
 
-.Act_little-card2 {
-        height: 50%;
-        
+.Act_little-card1 .img {
+    height: 260px;
 }
 
-.Act_little-card2 img {
-    height: 220px;
-    width: 100%;
-    border: 2px solid var(--grey);
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
+
+
+.Act_little-card2 .img {
+    height: 150px;
 }
 
-/* Footer */
+
+/* ---Footer--- */
+
 
 footer {
     background-color: var(--grey) ;
@@ -599,24 +567,23 @@ footer {
 }
 
 
-footer ul {
+.footer_ul {
    width: 35%;
 }
 
 
-footer li {
+.footer_li {
     display: flex;
     flex-direction: column;
 }
 
-footer p {
+.footer_p {
     font-size: large;
     font-weight: bold;
 }
 
-footer a,
-footer a:link {
-    text-decoration: none;
+.footer_a,
+.footer_a:link {
     color: black;
     font-size: large;
     padding-top: 8px;
