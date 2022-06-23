@@ -211,8 +211,9 @@ padding: 17px;
 border: 2px solid var(--grey);
 font-weight: bold;
 font-size: 20px;
-color: black;
+
 }
+
 
 .search_btn {
  display: none;
@@ -298,7 +299,7 @@ nav li {
 }
 .filter_li-hover:hover {
  background-color: var(--blue-light);
- color:var(--blue);
+ transform: scale(1.1);
 }
 
 
