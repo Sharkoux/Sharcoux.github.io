@@ -1,20 +1,20 @@
 
 
 
-/*header resolution tablette*/
+/*Nav resolution tablette*/
 
-.header {
+.Nav {
    
     flex-direction: row;
     align-items: center;
 }
 
-.header_ul {
+.Nav_ul {
     align-items: center;
     padding-bottom: 10px;
 }
 
-.header_img {
+.Nav_img {
     height: 70px;
     margin: 15px 20px 0 100px;
     
@@ -22,9 +22,9 @@
 
  
 
-/* Nav tablette*/
+/* Home tablette*/
 
-nav {
+.Home {
 
     width: 100%;
     text-align: left;
@@ -38,7 +38,7 @@ nav {
    line-height: 5%;
 }
 
-.nav_form {
+.Home_form {
     width: auto;
 }
 
@@ -58,7 +58,7 @@ nav {
     padding-left: 0px;
 }
 
-nav li {
+    .Home li {
     display: flex;
     flex-direction: row;
    
@@ -122,7 +122,7 @@ nav li {
 /* Section 3 Tablette */
 
 .Act_two-card { 
-    margin-left:0%;
+    margin-left:0px;
     width: 25%;
 
 }
