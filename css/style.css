@@ -89,7 +89,7 @@ a {
 
 /* Format Title */
 ._title {
-    font-size: x-large;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -99,11 +99,11 @@ a {
 
 
 ._card-star {
-    font-size: 15px;
+    font-size: 17px;
     color: rgb(242, 242, 242);
     object-fit: fill;
     padding-left: 10px;
-    padding-top: 5px;
+   padding-bottom: 10px;
  
 }
 
@@ -158,7 +158,7 @@ a {
 
 .Nav_li {
     padding-top: 60px;
-    font-size: large;
+    font-size: 20px;
 }
 
 .Nav_a {
@@ -182,7 +182,7 @@ a {
 }
 
 .Home_p {
-    font-size: medium;
+    font-size: 20px;
 }
 
 
@@ -198,7 +198,7 @@ a {
 }
 
 .Home_form {
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     margin-top: 15px;
@@ -206,11 +206,9 @@ a {
 
 
 .search_text[type=text] {
-    padding: 17px;
+    padding: 18px;
     border: 2px solid var(--grey);
     font-weight: bold;
-    font-size: 20px;
-
 }
 
 
@@ -237,16 +235,15 @@ a {
     flex-direction: row;
     padding-top: 15px;
     margin-bottom: 15px;
-    font-size: large;
+    font-size: 22px;
     margin-left: 15px;
 }
 
 .filter_p1 {
 
-    padding-top: 35px;
+    padding-top: 40px;
     font-weight: bold;
-    font-size: large;
-    padding-right: 15px;
+    padding-right: 25px;
 
 }
 
@@ -256,21 +253,17 @@ a {
 }
 
 .filter_ul {
-    width: 70%;
     display: flex;
     flex-direction: row;
-
     font-weight: bold;
-    align-items: center;
-    padding-left: 0px;
+    
 }
 
 
 
 .Home li {
-    max-height: 50px;
     display: flex;
-    border: 4px solid var(--grey);
+    border: 5px solid var(--grey);
     border-radius: 45px;
     margin: 18px;
     padding-right: 28px;
@@ -282,10 +275,10 @@ a {
 .filter_icon {
 
     display: flex;
-    margin-left: -34px;
+    margin-left: -25px;
     border: 4px solid var(--blue-light);
     background-color: var(--blue-light);
-    padding: 12px;
+    padding: 13px;
     color: var(--blue);
     border-radius: 50%;
 
@@ -319,8 +312,8 @@ a {
 
 .info_icon {
     font-weight: bold;
-    font-size: 14px;
-    padding: 10px 10px;
+    font-size: 15px;
+    padding: 12px 12px;
     border: 2px solid var(--grey);
     color: var(--blue);
     border-radius: 50%;
@@ -337,7 +330,8 @@ a {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-  
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -346,23 +340,24 @@ a {
 
 #Heberg {
     width: 75%;
-    margin-left: -20px;
-    margin-right: -20px;
     border-radius: 2%;
     padding-bottom: 45px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .Heberg_title {
-    padding-left: 35px;
+    padding-left: 30px;
 }
+
 
 .Heberg_container {
     display: flex;
     flex-flow: column wrap;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: -25px;
-    margin-right: -25px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 
@@ -372,21 +367,21 @@ a {
 }
 
 .Heberg_card_container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex: 33%;
-   flex-direction: column;
+    flex-direction: column;
    
 
 }
 
 .Heberg_container1 {
     display: flex;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: -30px;
-    margin-right: -30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
     margin-bottom: 20px;
     
 }
@@ -400,23 +395,23 @@ a {
 }
 
 .Heberg_img {
-    height: 115px;
+    height: 150px;
 }
 
 .Heberg_card-body {
 padding-top: 10px;
 padding-left: 10px;
-padding-bottom: 10px;
+padding-bottom: 15px;
 }
 
 .Heberg_card-title {
     font-size: 19px;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .Heberg_card-value {
-    font-size: 18px;;
+    font-size: 15px;
 }
 
 .Heberg_plus {
@@ -434,12 +429,12 @@ padding-bottom: 10px;
 
 .Pop {
     width: 25%;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
     border-radius: 4%;
+
 }
 .Pop_star {
-    width: 90%;
     display: flex;
     justify-content: space-between;
     font-size: x-large;
@@ -448,51 +443,54 @@ padding-bottom: 10px;
 .Pop_container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+   margin-left: -5px;
+   margin-right: -5px;;
 }
 
 
-
-.Pop_card {
- 
-    width: 90%;
-
+._Pop_title_value {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
 }
 
+.star_Pop {
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
 
 .Pop_card-image {
-    width: 30%;
+    width: 40%;
     object-fit: fill;
-
+   
 }
 
 .Pop_img {
+    height: 100%;
     border-radius: 20px 0px 0px 20px;
 }
 
 
 .Pop_card-body {
     margin-left: 15px;
-
+    width: 60%;
+    padding-top: 15px;
 }
 
 .Pop_card-title {
     font-weight: bold;
     object-fit: fill;
+    padding-bottom: 10px;
+    font-size: 19px;
 }
 
-.Pop_card-value {
 
-    object-fit: fill;
-}
 
 
 .Pop_card:hover {
-    width: 80%;
-    height: 30%;
     font-size: large;
-    font-weight: bold;
-    text-align: center;
     box-shadow: var(--shadows-two-hover);
 }
 
@@ -507,7 +505,6 @@ padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 750px;
 }
 
 .Act_title {
@@ -516,26 +513,29 @@ padding-bottom: 10px;
 }
 
 .Act_bis {
-    padding-top: 15px;
+    padding-bottom: 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100%;
-    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+
 }
 
 /*  Card 1 / 3 */
 .Act_card-large {
-    width: 22%;
-    height: 540px;
+    
     border: 2px solid var(--grey);
     flex-direction: column;
-    margin-right: 28px;
+    
 
 }
 
-.Act_image-large {
-    height: 90%;
+.Card_large {
+    width: 25%;
+    height: 540px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .Act_img {
@@ -550,9 +550,11 @@ padding-bottom: 10px;
 
 /* card column 2 / 4 */
 .Act_two-card {
-    width: 22%;
+    width: 25%;
     height: 525px;
-    margin-right: 15px;
+     padding-right: 15px;
+     padding-left: 15px;
+
 }
 
 .Act_card-container1 {
@@ -565,8 +567,6 @@ padding-bottom: 10px;
 }
 
 .Act_card-container {
-    height: 60%;
-    width: 100%;
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid var(--grey);
