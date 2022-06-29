@@ -532,8 +532,8 @@ padding-bottom: 15px;
 }
 
 .Card_large {
-    width: 25%;
-    height: 540px;
+    display: flex;
+    flex: 25%;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -550,8 +550,9 @@ padding-bottom: 15px;
 
 /* card column 2 / 4 */
 .Act_two-card {
-    width: 25%;
-    height: 525px;
+     display: flex;
+     flex-direction: column;
+     flex: 25%;
      padding-right: 15px;
      padding-left: 15px;
 
