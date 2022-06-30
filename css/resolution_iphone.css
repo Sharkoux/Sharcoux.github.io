@@ -19,7 +19,6 @@
 
 
 .Nav_ul{
-width: 100%;
 justify-content: space-around;
 }
 
@@ -28,16 +27,23 @@ justify-content: space-around;
 /* Home Iphone */
 
 .Home {
-width: 90%;
+width: auto;
+padding-left: 0px;
 align-items: center;
 margin-left: 20px;
 margin-right: 5px;
+
 }
 
+.Home_form {
+    font-size: 17px;
+}
 
+.filter_p1 {
+    padding-left: 20px;
+}
 
 .filter_ul {
-    font-size: 15px;
     white-space: nowrap;
 }
 
@@ -58,7 +64,9 @@ margin-right: 5px;
     padding: 19px;
 }
 
-
+.info {
+    padding-right: 0px;
+}
  .info_icon {
     margin-right: auto;
 }
@@ -71,27 +79,17 @@ width: 100%;
 
 .Pop {
 border-radius: 0%;
-width: 95%;
-margin-right: 5px;
-margin-left: 5px;
+width: 100%;
+
 
 
 }
-.Pop_star { 
-padding-top: 10px;
-}
+
 
 .Heberg_title {
-
-text-align: center;
-justify-content: space-between;
 white-space: nowrap;
 }
 
-.Pop_card {
-    width: 90%;
-    height: 28%;
-}
 
 .Pop_title {
     text-align: center;
@@ -104,18 +102,22 @@ white-space: nowrap;
 }
 
 .Heberg_container,
+.Heberg_container1,
 .Pop_container {
     flex-direction: column;
 }
 
 .Heberg_card,
 .Act_card{
-    margin: 20px;
-    width: 92%;
+ 
+    width: 100%;
     border:3px solid var(--grey)
 }
 
-
+.Heberg_card_container {
+    padding-left: 0px;
+    padding-right: 0px;;
+}
 
 .Heberg_plus{
 text-align: left;
@@ -123,59 +125,46 @@ text-align: left;
 }
 
 /* Section 3 "Activité à Marseille */
-#Act {
-    height: auto;
-    width: 100%;
-    margin-bottom: 45px;
-}
+
 
 .Act_bis{
     flex-direction: column;
-    align-items: center;
+   
   
 }
 
 .Act_title {
     text-align: center;
 }
-.Act_img {
-    height: 200px;
-}
+
+
 
 .Act_card-large {
-    width: 80%;
-    height: auto;
+    width: 100%;
+  
 }
 
 .Act_card-title {
 text-align: center;
 }
 
-.Act_image-large { 
-    height: 195px;
-
-}
 
 .Act_two-card {
-    width:80%;
-    height: auto;
+    width:100%;
 }
 
 .Act_card-container { 
     margin-bottom: 10px;
-    height: auto;
-}
-
-
-
-
-.Act_little-card1,
-.Act_little-card2 {
-    height: 45%;
 
 }
+
+
+
+
+
 .Act_little-card1 .img,
-.Act_little-card2 .img {
+.Act_little-card2 .img,
+.Act_img {
     height: 180px;
 }
 
@@ -183,7 +172,6 @@ text-align: center;
 
 
 footer {
-    width: 100%;
     height: 700px;
     flex-direction: column;
     
