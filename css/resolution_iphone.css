@@ -75,6 +75,7 @@ margin-right: 5px;
 
 .main {
 width: 100%;
+padding: 0px;
 }
 
 .Pop {
@@ -99,6 +100,11 @@ white-space: nowrap;
 #Heberg {
     background-color: white;
     border: none;
+    margin: 0px;
+}
+
+.Heberg_container {
+    padding: 0px;
 }
 
 .Heberg_container,
@@ -142,10 +148,6 @@ text-align: left;
 .Act_card-large {
     width: 100%;
   
-}
-
-.Act_card-title {
-text-align: center;
 }
 
 
