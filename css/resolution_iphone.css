@@ -1,6 +1,4 @@
-.container {
-    margin: 0px;
-}
+
 
 /* NAV */
 .Nav {
@@ -8,43 +6,54 @@
     border-bottom: 3px solid var(--grey);
 }
 
+.Nav_a {
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
 
-.Nav_a:hover {
+.Nav_container {
+    width: 50%;
+    padding-bottom: 31px;
+}
+
+.Nav_li:hover {
     color: var(--blue);
-    border-bottom: 3px solid var(--blue);
-    padding-bottom: 10px;
-    border-top: none;
+    border-bottom: solid;
+    padding-bottom: 31px;
 }   
 
-
+.Nav a:hover {
+    border-top: none;
+}
 
 .Nav_ul{
 justify-content: space-around;
+width: 100%;
+padding-bottom: 0px;
 }
+
+.Nav_li {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
 
 
 
 /* Home Iphone */
 
 .Home {
-width: auto;
+
 padding-left: 0px;
 align-items: center;
 margin-left: 20px;
-margin-right: 5px;
 
-}
 
-.Home_form {
-    font-size: 17px;
 }
 
 .filter_p1 {
     padding-left: 20px;
-}
-
-.filter_ul {
-    white-space: nowrap;
 }
 
 .search_input {
@@ -61,12 +70,9 @@ margin-right: 5px;
     font-weight: bold;
     color: white;
     border-radius:13px 13px 13px 13px;
-    padding: 19px;
+    padding: 17px;
 }
 
-.info {
-    padding-right: 0px;
-}
  .info_icon {
     margin-right: auto;
 }
@@ -74,14 +80,13 @@ margin-right: 5px;
 /* Main iphone */
 
 .main {
-width: 100%;
+
 padding: 0px;
 }
 
-.Pop {
-border-radius: 0%;
-width: 100%;
+.Pop_container {
 
+border-radius: 0px;
 
 
 }
@@ -97,14 +102,12 @@ white-space: nowrap;
     padding-left: 0px;
 }
 
-#Heberg {
-    background-color: white;
-    border: none;
-    margin: 0px;
-}
 
 .Heberg_container {
     padding: 0px;
+    background-color: white;
+    border: none;
+    margin: 0px;
 }
 
 .Heberg_container,
@@ -121,8 +124,7 @@ white-space: nowrap;
 }
 
 .Heberg_card_container {
-    padding-left: 0px;
-    padding-right: 0px;;
+    width: 100%;
 }
 
 .Heberg_plus{
@@ -145,18 +147,22 @@ text-align: left;
 
 
 
+.Card_large,
 .Act_card-large {
     width: 100%;
   
 }
 
-
+.Card_large {
+    margin-top: 30px;
+}
 .Act_two-card {
     width:100%;
 }
 
-.Act_card-container { 
-    margin-bottom: 10px;
+.Act_card-container,
+.Act_card-container1 { 
+    margin-top: 30px;
 
 }
 
