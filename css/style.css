@@ -230,7 +230,7 @@ a {
     background-color: var(--blue);
     font-weight: bold;
     color: white;
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 15px 15px 0;
     padding: 17px;
 }
 
@@ -353,7 +353,7 @@ a {
 
 #Heberg {
     display: flex;
-    width: 75%;
+    width: 70%;
     padding-left: 15px;
     padding-right: 15px;
     
@@ -433,7 +433,7 @@ padding-bottom: 15px;
 
 
 .Pop {
-    width: 25%;
+    width: 30%;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -448,6 +448,7 @@ padding-bottom: 15px;
     flex-direction: column;
     border-radius: 3%;
 }
+
 
 
 ._Pop_title_value {
