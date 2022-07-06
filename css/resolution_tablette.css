@@ -1,6 +1,4 @@
 
-
-
 /*Nav resolution tablette*/
 
 .Nav {
@@ -27,6 +25,7 @@
 /* Home tablette*/
 
 .Home {
+
 
 
    padding-left: 50px;
@@ -69,6 +68,8 @@
 .main {
     flex-direction: column;
     align-items: center;
+    margin-right: 0px;
+    margin-left: 0px;
     
 }
 
@@ -100,17 +101,19 @@
 
 /* Section 3 Tablette */
 
-
-
-
-.Act_two-card { 
-width: 50%;
-
-
+.Act_bis {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
-.Card_large {
+
+
+.Act_two-card,
+.Card_large { 
 width: 50%;
+padding-bottom: 30px;
 }
+
 
 /* Footer */
 footer {

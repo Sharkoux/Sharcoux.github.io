@@ -62,7 +62,6 @@ margin-left: 20px;
 
 
 
-
 .search_btn {
     display: block;
     border: 1px solid var(--blue);
@@ -87,6 +86,7 @@ padding: 0px;
 .Pop_container {
 
 border-radius: 0px;
+
 
 
 }
@@ -153,18 +153,10 @@ text-align: left;
   
 }
 
-.Card_large {
-    margin-top: 30px;
-}
 .Act_two-card {
     width:100%;
 }
 
-.Act_card-container,
-.Act_card-container1 { 
-    margin-top: 30px;
-
-}
 
 
 
@@ -182,9 +174,5 @@ text-align: left;
 footer {
     height: 700px;
     flex-direction: column;
-    
-}
-
-.footer_ul {
-    margin-left: 15px;
+    white-space: nowrap;
 }
