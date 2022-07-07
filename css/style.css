@@ -635,5 +635,9 @@ footer {
 .footer_a:link {
     color: black;
     font-size: large;
-    padding-top: 8px;
+    
+}
+
+.footer_link {
+    padding-top: 10px;
 }

@@ -165,7 +165,7 @@ text-align: left;
 .Act_little-card1 .img,
 .Act_little-card2 .img,
 .Act_img {
-    height: 180px;
+    height: 180px!important
 }
 
 /* Footer Iphone */
