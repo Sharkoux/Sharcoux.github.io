@@ -36,7 +36,7 @@
 .filter {
    flex-direction: column;
    margin-left: 0px;
-   font-size: 20px;
+   
 }
 
 
@@ -82,8 +82,26 @@
 }
 
 
+.Pop_container {
+    width: 100%;
+}
 
+.Pop_card-image {
+    width: 50%;
+}
 
+.Pop_card-body {
+    width: 50%;
+
+}
+
+._Pop_title_value {
+    font-size: 19px;
+}
+
+.Pop_img {
+    height: 190px;
+}
 
 
 #Heberg {

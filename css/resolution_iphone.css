@@ -47,9 +47,19 @@ padding-bottom: 0px;
 
 padding-left: 0px;
 align-items: center;
-margin-left: 20px;
+text-align: center;
 
 
+}
+
+.Home_p {
+
+    font-size: 18px;
+}
+
+.Home_form {
+    border: 2px solid var(--grey);
+    border-radius: 17px;
 }
 
 .filter_p1 {
@@ -60,7 +70,19 @@ margin-left: 20px;
     display: none;
 }
 
+.filter_ul {
+    width: 100%;
+}
 
+.filter_li-ligne1 {
+    width: 50%;
+}
+
+.search_text[type=text] {
+    border: 0px;
+
+    
+}
 
 .search_btn {
     display: block;
@@ -86,10 +108,13 @@ padding: 0px;
 .Pop_container {
 
 border-radius: 0px;
-
-
-
 }
+
+.Pop {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 
 .Heberg_title {
@@ -120,11 +145,14 @@ white-space: nowrap;
 .Act_card{
  
     width: 100%;
-    border:3px solid var(--grey)
+    border:2px solid var(--grey)
 }
 
 .Heberg_card_container {
     width: 100%;
+}
+.Heberg_img{
+border: 6px solid white;
 }
 
 .Heberg_plus{
@@ -141,9 +169,6 @@ text-align: left;
   
 }
 
-.Act_title {
-    text-align: center;
-}
 
 
 
@@ -172,7 +197,11 @@ text-align: left;
 
 
 footer {
-    height: 700px;
     flex-direction: column;
     white-space: nowrap;
+    min-width: 350px;
+}
+
+.footer_ul {
+    padding-bottom: 45px;
 }

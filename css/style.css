@@ -79,7 +79,7 @@ a {
     display: flex;
     flex-direction: column;
     object-fit: fill;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 20px;
 }
 
@@ -97,7 +97,7 @@ a {
 
 ._card-star {
     display: flex;
-    font-size: 17px;
+    font-size: 16px;
     color: rgb(242, 242, 242);
     object-fit: fill;
     padding-left: 10px;
@@ -134,7 +134,7 @@ a {
 
 ._body {
     background-color: var(--grey);
-    padding: 30px;
+    padding: 25px;
     border: 1px solid var(--grey);
 }
 
@@ -233,6 +233,7 @@ a {
     color: white;
     border-radius: 0 15px 15px 0;
     padding: 17px;
+    cursor: pointer;
 }
 
 .search_input:hover {
@@ -250,7 +251,7 @@ a {
     flex-wrap: wrap;
     padding-top: 15px;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 15px;
 }
 
@@ -303,6 +304,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .filter_li-hover:hover {
@@ -378,6 +380,7 @@ a {
     flex-direction: column;
     width: 100%;
     margin-bottom: 30px;
+    justify-content: space-between;
 }
 
 .Heberg_card_container {
@@ -410,7 +413,7 @@ padding-bottom: 15px;
 }
 
 .Heberg_card-title {
-    font-size: 19px;
+    font-size: 17px;
     font-weight: bold;
     padding-bottom: 5px;
 }
@@ -435,11 +438,12 @@ padding-bottom: 15px;
     width: 30%;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
 }
 .Pop_star {
     display: flex;
     justify-content: space-between;
-    font-size: x-large;
+    font-size: 23px;
 }
 
 .Pop_container {
@@ -459,8 +463,8 @@ padding-bottom: 15px;
 .star_Pop {
 
     display: flex;
-    padding-top: 50px;
     padding-bottom: 0px;
+    padding-left: 0px;
 }
 
 .Pop_card-image {
@@ -470,7 +474,7 @@ padding-bottom: 15px;
 }
 
 .Pop_img {
-    height: 180px;
+    height: 170px;
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -485,7 +489,7 @@ padding-bottom: 15px;
     font-weight: bold;
     object-fit: fill;
     padding-bottom: 10px;
-    font-size: 19px;
+    
 }
 
 .Pop_card {
@@ -539,7 +543,7 @@ padding-bottom: 15px;
 }
 
 .Act_img {
-    height: 485px;
+    height: 500px;
 }
 
 .Act_card-title {
@@ -611,20 +615,19 @@ footer {
     background-color: var(--grey);
     display: flex;
     flex-direction: row;
-   
-    padding: 40px;
+    padding: 20px;
+    
 }
 
 
 .footer_ul {
     width: 33.33%;
-}
-
-
-.footer_li {
     display: flex;
     flex-direction: column;
+    list-style: none;
+    padding-left: 115px;
 }
+
 
 .footer_p {
     font-size: large;
