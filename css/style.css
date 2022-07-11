@@ -312,6 +312,11 @@ a {
     transform: scale(1.1);
 }
 
+.filter_familial {
+    font-size: 20px; 
+    padding-left: 17px; 
+    padding-right: 17px;  
+}
 
 
 /* ---icone info--- */
@@ -410,6 +415,7 @@ a {
 padding-top: 10px;
 padding-left: 10px;
 padding-bottom: 15px;
+height: 100%;
 }
 
 .Heberg_card-title {

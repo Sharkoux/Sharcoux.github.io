@@ -12,11 +12,6 @@
     padding-bottom: 10px;
 }
 
-.Nav_img {
-    height: 70px;
-    margin: 15px 20px 0 100px;
-    
-}
 
 .Nav_li {
     width: 50%;
@@ -24,14 +19,7 @@
 
 /* Home tablette*/
 
-.Home {
 
-
-
-   padding-left: 50px;
-    
-    
-}
 
 .filter {
    flex-direction: column;
@@ -58,11 +46,7 @@
 
 
     
-    .info {
-     justify-content: center;
-     padding-right: 30px;
-    }
-
+   
 /* Main Tablette */
 
 .main {

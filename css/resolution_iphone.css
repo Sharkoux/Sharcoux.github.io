@@ -38,7 +38,9 @@ padding-bottom: 0px;
     text-align: center;
 }
 
-
+.Nav_img {
+    margin-top: 0px;
+}
 
 
 /* Home Iphone */
@@ -50,6 +52,10 @@ align-items: center;
 text-align: center;
 
 
+}
+
+.Home_title {
+    font-size: 20px;
 }
 
 .Home_p {
@@ -74,8 +80,30 @@ text-align: center;
     width: 100%;
 }
 
-.filter_li-ligne1 {
-    width: 50%;
+.filter {
+    font-size: 17px;
+}
+
+.filter_icon {
+padding: 10px;
+margin-left: -9px;
+}
+
+.filter_familial {
+    font-size: 17px; 
+    padding-left: 13px; 
+    padding-right: 13px;  
+}
+
+.filter_p {
+    margin-left: 5px;
+    padding-right: 5px;
+}
+
+.Home li {
+  margin: 10px;
+  padding-right: 8px;
+  padding-left: 6px;
 }
 
 .search_text[type=text] {
